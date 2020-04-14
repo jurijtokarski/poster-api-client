@@ -1,4 +1,4 @@
-export namespace client {
+declare namespace client {
   export interface RedirectUrlOptions {
     applicationId: string;
     returnUrl: string;

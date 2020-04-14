@@ -2,13 +2,7 @@ import queryString from "query-string";
 import axios from "axios";
 import urlJoin from "url-join";
 
-import { client } from "./client";
-import { poster } from "./poster";
-
-export {
-  client,
-  poster
-}
+export const DEFAULT_API_ROOT = "https://joinposter.com";
 
 export class PosterApiClient {
   constructor(protected options: client.ClientOptions) { }
@@ -30,7 +24,7 @@ export class PosterApiClient {
   }
 
   private getApiRoot() {
-    return this.options.apiRoot || poster.DEFAULT_API_ROOT;
+    return this.options.apiRoot || DEFAULT_API_ROOT;
   }
 
   // Authorization

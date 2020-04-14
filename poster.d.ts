@@ -1,6 +1,4 @@
-export namespace poster {
-  export const DEFAULT_API_ROOT = "https://joinposter.com";
-
+declare namespace poster {
   interface Response<T> {
     response: T;
   }
