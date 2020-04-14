@@ -8,10 +8,6 @@
       "dom",
       "es5",
       "esnext"
-    ],
-    "types": [
-      "./client",
-      "./poster"
     ]
   }
 }
