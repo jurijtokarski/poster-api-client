@@ -1,6 +1,6 @@
 {
   "name": "poster-api-client",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Unofficial Poster API client",
   "main": "index.js",
   "scripts": {
