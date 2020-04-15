@@ -1,4 +1,3 @@
-import queryString from "query-string";
 import axios from "axios";
 import urlJoin from "url-join";
 
@@ -33,11 +32,7 @@ export class PosterApiClient {
       ? `https://${options.account}.joincom/`
       : "https://joincom/";
 
-    const query = queryString.stringify({
-      application_id: options.applicationId,
-      redirect_uri: options.returnUrl,
-      response_type: "code"
-    });
+    const query = `response_type=code&application_id=${options.applicationId}&redirect_uri=${options.returnUrl}`;
 
     return urlJoin(url, `/api/auth?${query}`);
   }

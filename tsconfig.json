@@ -4,6 +4,7 @@
     "allowSyntheticDefaultImports": true,
     "declaration": true,
     "isolatedModules": true,
+    "esModuleInterop": true,
     "lib": [
       "dom",
       "es5",
